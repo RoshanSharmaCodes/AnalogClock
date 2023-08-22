@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>JS + CSS Clock</title>
+  <title></title>
 </head>
 <body>
     <div class="clock">
@@ -12,7 +12,7 @@
             <div class="hand second-hand"></div>
         </div>
     </div>
-  // CSS part starts
+ 
     <style>
         html {
         background: #018DED url(https://images.wallpapersden.com/image/download/hokage-naruto-4k_bGdrbmyUmZqaraWkpJRpZW5trWdoZWk.jpg);
@@ -66,7 +66,7 @@
         }
     </style>
   
-  // JS part starts
+
     <script>
         
         const secondHand = document.querySelector('.second-hand');
@@ -87,9 +87,7 @@
             const hoursDegrees = ((hours/60)*360)+90;
             hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
         }
-
         setInterval(setDate, 1000);
-
     </script>
 </body>
 </html>
